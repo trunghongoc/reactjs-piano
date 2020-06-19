@@ -73,6 +73,7 @@ h1 {
   width: 100%;
 }
 .key-white:hover,
-.key-black:hover{
+.key-black:hover,
+.key-highlight {
   background: rgb(255,192,32);
 }

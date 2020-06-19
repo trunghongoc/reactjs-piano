@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 
-const PianoKeyWhite = ({ config, play }) => {
+const PianoKeyWhite = ({ config, play, highlightKey }) => {
+  const defaultClasses = 'piano-keys key-white'
+  const highlightClass = 'key-highlight'
+  const [classes, setClasses] = useState(defaultClasses)
+
+  useEffect(() => {
+    const currentKey = config[0] + config[1]
+    if (highlightKey.key === currentKey) {
+      setClasses(defaultClasses + ' ' + highlightClass)
+    } else {
+      setClasses(defaultClasses)
+    }
+    setTimeout(() => setClasses(defaultClasses), 500)
+  }, [highlightKey])
+
   return (
     <div
-      className="piano-keys key-white"
+      className={classes}
       onClick={() => play(config)}>
-
       <div className="node">{ config[0] + config[1] }</div>
     </div>
   );
