@@ -19,6 +19,7 @@ const PianoKeyWhite = ({ config, play, highlightKey }) => {
     <div
       className={classes}
       onClick={() => play(config)}>
+      <div className="key">{ config[2].toUpperCase() }</div>
       <div className="node">{ config[0] + config[1] }</div>
     </div>
   );

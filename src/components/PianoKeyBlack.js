@@ -20,7 +20,7 @@ const PianoKeyBlack = ({ config, play, style, highlightKey }) => {
       style={style}
       className={classes}
       onClick={() => play(config)}>
-
+      <div className="key">{ config[3].toUpperCase() }</div>
       <div className="node">{ config[0] + config[1] }</div>
     </div>
   );

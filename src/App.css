@@ -55,6 +55,20 @@ h1 {
   display: block;
   width: 100%;
 }
+.key-white .key {
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 30px;
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bdc3c7;
+  left: 5px;
+  line-height: 30px;
+  border-radius: 50%;
+}
 .key-black {
   background: rgb(32,32,32);
   color: #fff;
@@ -71,6 +85,20 @@ h1 {
   text-align: center;
   display: block;
   width: 100%;
+}
+.key-black .key {
+  font-size: 12px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 30px;
+  text-align: center;
+  display: block;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #bdc3c7;
+  left: 4px;
+  line-height: 23px;
+  border-radius: 50%;
 }
 .key-white:hover,
 .key-black:hover,
